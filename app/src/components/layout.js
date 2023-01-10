@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {width > 768 ? (
-        <div className="mx-[20%] bg-gray-500">{children}</div>
+        <div className="mx-[20%]">{children}</div>
       ) : (
         <div className="">{children}</div>
       )}
