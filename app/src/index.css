@@ -20,11 +20,15 @@
 
 body {
   color: white;
-  background-color: #170e2b;
+  background-color: rgb(25, 25, 45);
   margin: 0;
   font-family: "Outfit", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.mint {
+  color: #96e6be;
 }
 
 code {

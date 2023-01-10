@@ -10,7 +10,7 @@ const About = () => {
         <img src={profile_pic} alt="profile picture" />
       </div>
       <div className="">
-        <p className="text-[30px] text-[#FF00E5] font-bold">
+        <p className="text-[30px] text-[#96e6be] font-bold">
           Lorem ipsum dolor
         </p>
         <p className="text-[15px]">
