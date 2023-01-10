@@ -1,5 +1,6 @@
 import Layout from "./components/layout";
 import Navbar from "./partials/navbar";
+import Footer from "./partials/footer";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Layout>
         <div>hello</div>
       </Layout>
+      <Footer />
     </>
   );
 }

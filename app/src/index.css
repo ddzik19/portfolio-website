@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap");
 
+.padding {
+  padding: 50px 0;
+}
+
 body {
   color: white;
   background-color: #170e2b;
