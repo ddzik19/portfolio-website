@@ -1,28 +1,30 @@
 import OmniproLogo from "../assets/Omnipro_Logo.jpg";
+import { useEffect, useState } from "react";
 
 const CompanyList = () => {
-  const companies = [
-    {
-      logo: OmniproLogo,
-      href: "https://omnipro.ie/",
-      alt: "Omnipro logo",
-    },
-  ];
+  const { companyName, setCompanyName } = useState();
+
+  useEffect(() => {
+    displayInfo();
+  });
+
+  const displayInfo = ({ name }) => {
+    if (name === "Omnipro") {
+      return <p>Omnipro</p>;
+    }
+  };
 
   return (
-    <div className="padding">
-      <div className="inline-block px-10">
-        <button className="border-l-2 border-mint">
-          <p className="text-center">Omnipro</p>
-        </button>
-        <button className="border-l-2 border-mint">
-          <p className="text-center">Omnipro</p>
-        </button>
-        <button className="border-l-2 border-mint">
-          <p className="text-center">Omnipro</p>
+    <div className="padding grid grid-cols-[150px_200px]">
+      <div className="">
+        <button
+          className="block border-l-2 border-mint px-5 py-2"
+          onClick={setCompanyName("Omnipro")}
+        >
+          Omnipro
         </button>
       </div>
-      <div className="inline-block">hello</div>
+      <div className="py-2"></div>
     </div>
   );
 };
