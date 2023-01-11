@@ -4,13 +4,16 @@ import Footer from "./partials/footer";
 import About from "./partials/about";
 import LeftNav from "./partials/left-nav";
 import CompanyList from "./partials/company-list";
+import Projects from "./partials/projects";
+
 function App() {
   return (
     <>
       <Navbar />
       <Layout>
         <About />
-        <CompanyList />
+        {/* <CompanyList /> */}
+        <Projects />
       </Layout>
       <LeftNav />
       <Footer />
