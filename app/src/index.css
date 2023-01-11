@@ -2,15 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+.padding {
+  padding: 100px 0;
+}
+
+.about-transition {
+  margin-left: 0;
+  opacity: 100%;
+  transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+}
 
 body {
   color: white;
-  background-color: #170e2b;
+  background-color: #19192d;
   margin: 0;
-  font-family: "Outfit", sans-serif;
+  font-family: "Space Mono", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.mint {
+  color: #96e6be;
 }
 
 code {

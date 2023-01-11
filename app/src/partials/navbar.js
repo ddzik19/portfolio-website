@@ -3,7 +3,7 @@ import useWindowDimensions from "../hooks/use-window-dimensions";
 const Navbar = () => {
   const { width, height } = useWindowDimensions();
   return (
-    <div className="mx-[80px]">
+    <div className="mx-[80px] pb-[100px]">
       {width > 768 ? (
         <div className="float-right py-5 bg-gray-600 text-center font-semibold">
           <hr className="mx-auto mt-[-20px] w-[1px] h-[150px] bg-white" />
