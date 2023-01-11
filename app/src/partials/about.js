@@ -1,26 +1,20 @@
 import profile_pic from "../assets/White_square.png";
-import { useInView } from "react-intersection-observer";
 
 const About = () => {
-  const { ref, inView } = useInView();
-
   return (
-    <div ref={ref} className="padding grid grid-cols-2">
-      <div className="mx-auto">
-        <img src={profile_pic} alt="profile picture" />
-      </div>
-      <div className="">
-        <p className="text-[30px] text-[#96e6be] font-bold">
-          Lorem ipsum dolor
-        </p>
-        <p className="text-[15px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          accumsan, orci quis condimentum gravida, quam odio vulputate nulla, at
-          tristique odio lectus ac magna. Quisque nulla sem, dictum vel eros ut,
-          tristique feugiat nisl. Mauris et nunc in magna aliquam faucibus.
-          Integer feugiat augue dignissim dapibus mollis.
-        </p>
-      </div>
+    <div className="padding">
+      <p className="text-[18px] text-mint">Hi, my name is</p>
+      <p className="text-[60px] font-bold">Damian Dzik.</p>
+      <p className="text-[18px] text-gray-400 text-left">
+        I am a
+        <p className="px-1 text-mint inline text-[20px]">Software Engineer,</p>
+        with a main focus on Frontend development. In my spare time I try to
+        stay productive by either working on my personal projects or baking
+        delicious cupcakes.
+      </p>
+      <button className="text-[16px] p-3 font-semibold rounded-lg mt-7 border-2 border-mint hover:bg-mint">
+        Get In Touch
+      </button>
     </div>
   );
 };
