@@ -5,19 +5,20 @@ const Navbar = () => {
   return (
     <div className="mx-[80px]">
       {width > 768 ? (
-        <div className="w-full py-5 bg-gray-600 text-right font-semibold">
-          <div className="inline p-5">
-            <a href="#home" className="hover:text-[#FF00E5]">
+        <div className="float-right py-5 bg-gray-600 text-center font-semibold">
+          <hr className="mx-auto mt-[-20px] w-[1px] h-[150px] bg-white" />
+          <div className="p-5">
+            <a href="#home" className="hover:text-mint">
               Home
             </a>
           </div>
-          <div className="inline p-5">
-            <a href="#my-work" className="hover:text-[#FF00E5]">
+          <div className="p-5">
+            <a href="#my-work" className="hover:text-mint">
               My Work
             </a>
           </div>
-          <div className="inline p-5">
-            <a href="#-contact" className="hover:text-[#FF00E5]">
+          <div className="p-5">
+            <a href="#contact" className="hover:text-mint">
               Contact
             </a>
           </div>
