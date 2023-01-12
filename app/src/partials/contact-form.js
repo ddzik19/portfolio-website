@@ -4,9 +4,12 @@ const ContactForm = () => {
   const { width, height } = useWindowDimensions();
   return (
     <Fade bottom distance="10%" duration={1500}>
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-[700px]">
+      <div
+        id="contact-form"
+        className="py-8 lg:py-16 px-4 mx-auto max-w-[700px]"
+      >
         <h2 className="mb-4 text-4xl tracking-tight font-semibold text-left text-yellow">
-          Contact Us
+          Contact Me
         </h2>
         <p className="mb-8 lg:mb-16 text-[18px] font-light text-left text-gray-400">
           Got a technical issue? Got a job offer? Need details about our

@@ -6,7 +6,7 @@ const Projects = () => {
     <Fade bottom distance="10%" duration={1500}>
       <div className="padding">
         <p className="inline font-semibold text-[30px] text-yellow">
-          Things I've created
+          Things I've Created
         </p>
         <div className="mt-20">
           <Fade bottom distance="10%" duration={1500}>

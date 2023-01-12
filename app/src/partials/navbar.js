@@ -20,8 +20,11 @@ const Navbar = () => {
               </a>
             </div>
             <div className="p-5">
-              <a href="#contact" className="hover:text-yellow">
-                Contact
+              <a
+                href="#contact-form"
+                className="hover:text-yellow transition-all"
+              >
+                Contact Me
               </a>
             </div>
           </div>

@@ -18,6 +18,10 @@
   -ms-transition: all 0.6s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   background-color: #0f0916;
