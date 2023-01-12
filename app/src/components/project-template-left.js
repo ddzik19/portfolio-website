@@ -1,4 +1,5 @@
-import { BsGithub, BsFolderFill } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import { FiExternalLink } from "react-icons/fi";
 
 const ProjectTempalteLeft = ({
   githubHref,
@@ -39,7 +40,7 @@ const ProjectTempalteLeft = ({
               href={fileHref}
               className="mr-4 hover:text-mint hover:cursor-pointer"
             >
-              <BsFolderFill size={25} className="inline" />
+              <FiExternalLink size={25} className="inline" />
             </a>
           ) : (
             <></>

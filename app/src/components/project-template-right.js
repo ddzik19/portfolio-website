@@ -1,4 +1,5 @@
-import { BsGithub, BsFolderFill } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import { FiExternalLink } from "react-icons/fi";
 import Placeholder from "../assets/banner-redimensionat.jpg";
 import useWindowDimensions from "../hooks/use-window-dimensions";
 
@@ -27,7 +28,7 @@ const ProjectTempalteRight = ({ githubHref, fileHref, title, desc, image }) => {
               href={fileHref}
               className="mr-4 hover:text-mint hover:cursor-pointer"
             >
-              <BsFolderFill size={25} className="inline" />
+              <FiExternalLink size={25} className="inline" />
             </a>
           ) : (
             <></>

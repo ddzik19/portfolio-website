@@ -7,8 +7,7 @@ const Projects = () => {
   return (
     <Fade bottom distance="10%" duration={1500}>
       <div className="padding">
-        <p className="text-mint inline text-[30px] pr-5">&gt;</p>
-        <p className="inline font-semibold text-[30px]">My Work</p>
+        <p className="inline font-semibold text-[30px]">Things I've created</p>
         <Fade bottom distance="10%" duration={1500}>
           <ProjectTempalteLeft
             title={"Candy Chaser"}
