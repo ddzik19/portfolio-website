@@ -1,17 +1,29 @@
 import { BsGithub, BsFolderFill } from "react-icons/bs";
-import Placeholder from "../assets/banner-redimensionat.jpg";
-import useWindowDimensions from "../hooks/use-window-dimensions";
 
-const ProjectTempalteRight = ({ githubHref, fileHref, title, desc, image }) => {
-  const { width, height } = useWindowDimensions();
+const ProjectTempalteLeft = ({
+  githubHref,
+  fileHref,
+  title,
+  desc,
+  image,
+  technology,
+}) => {
   return (
     <div className="grid grid-cols-2 pt-20">
-      <div className=" w-[400px] h-fit mt-[50px] ml-[120px] z-10">
+      <div className="bg-black w-[500px] ml-[40px] h-fit filter grayscale hover:filter-none transition-all">
+        <img className="rounded-lg" src={image} alt="" />
+      </div>
+      <div className=" w-[400px] h-fit mt-[50px] ml-[-20px] z-10">
         <div className="bg-bluestone rounded-lg p-4">
           <p className="font-semibold text-mint text-[20px]">{title}</p>
           <p className="text-[14px]">{desc}</p>
+          <ul className=" text-mint pt-4 text-[14px]">
+            {technology.map((value, key) => {
+              return <li className="inline px-4">{value}</li>;
+            })}
+          </ul>
         </div>
-        <div className="pt-4">
+        <div className="pt-2">
           {githubHref ? (
             <a
               href={githubHref}
@@ -34,11 +46,8 @@ const ProjectTempalteRight = ({ githubHref, fileHref, title, desc, image }) => {
           )}
         </div>
       </div>
-      <div className="bg-black w-[500px] ml-[-40px] filter grayscale hover:filter-none transition-all">
-        <img className="rounded-lg" src={Placeholder} alt="" />
-      </div>
     </div>
   );
 };
 
-export default ProjectTempalteRight;
+export default ProjectTempalteLeft;
