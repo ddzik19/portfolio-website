@@ -4,10 +4,7 @@ const ContactForm = () => {
   const { width, height } = useWindowDimensions();
   return (
     <Fade bottom distance="10%" duration={1500}>
-      <div
-        id="contact-form"
-        className="py-8 lg:py-16 px-4 mx-auto max-w-[700px]"
-      >
+      <div id="contact-form" className="px-4 mx-auto max-w-[700px] padding">
         <h2 className="mb-4 text-4xl tracking-tight font-semibold text-left text-yellow">
           Contact Me
         </h2>
@@ -62,7 +59,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="rounded-lg border-[2px] border-yellow hover:bg-yellow hover:text-black p-4"
+            className="rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-4"
           >
             Send message
           </button>
