@@ -20,13 +20,12 @@
 
 body {
   color: white;
-  background-color: #19192d;
+  background-color: #0f0916;
   margin: 0;
   font-family: "Space Mono", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

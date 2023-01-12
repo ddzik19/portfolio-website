@@ -1,4 +1,3 @@
-import OmniproLogo from "../assets/Omnipro_Logo.jpg";
 import { useEffect, useState } from "react";
 
 const CompanyList = () => {

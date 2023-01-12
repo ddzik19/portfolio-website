@@ -10,25 +10,31 @@ const ProjectTempalteLeft = ({
   technology,
 }) => {
   return (
-    <div className="grid grid-cols-2 pt-20">
-      <div className="bg-black w-[500px] ml-[40px] h-fit filter grayscale hover:filter-none transition-all">
-        <img className="rounded-lg" src={image} alt="" />
-      </div>
-      <div className=" w-[400px] h-fit mt-[50px] ml-[-20px] z-10">
-        <div className="bg-bluestone rounded-lg p-4">
-          <p className="font-semibold text-mint text-[20px]">{title}</p>
+    <div className="flex">
+      <img
+        className="rounded-xl absolute w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
+        src={image}
+        alt="Picture of project"
+      />
+      <div className="mx-auto mt-[250px] w-[400px] h-fit z-10">
+        <div className="p-4 rounded-lg bg-deep shadow-lg bg-secondary">
+          <p className="font-semibold text-yellow text-[20px]">{title}</p>
           <p className="text-[14px]">{desc}</p>
-          <ul className=" text-mint pt-4 text-[14px]">
+          <ul className="text-yellow pt-4 text-[14px]">
             {technology.map((value, key) => {
-              return <li className="inline px-4">{value}</li>;
+              return (
+                <li key={key} className="inline px-4">
+                  {value}
+                </li>
+              );
             })}
           </ul>
         </div>
-        <div className="pt-2">
+        <div className="py-2">
           {githubHref ? (
             <a
               href={githubHref}
-              className="mr-4 hover:text-mint hover:cursor-pointer"
+              className="mr-4 hover:text-yellow hover:cursor-pointer"
             >
               <BsGithub size={25} className="inline" />
             </a>
@@ -38,7 +44,7 @@ const ProjectTempalteLeft = ({
           {fileHref ? (
             <a
               href={fileHref}
-              className="mr-4 hover:text-mint hover:cursor-pointer"
+              className="mr-4 hover:text-yellow hover:cursor-pointer"
             >
               <FiExternalLink size={25} className="inline" />
             </a>

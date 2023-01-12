@@ -7,20 +7,20 @@ const Navbar = () => {
     <>
       {width > 768 ? (
         <Fade right duration={1500}>
-          <div className="right-0 fixed py-5 text-center font-semibold mr-5">
+          <div className="right-0 fixed py-5 text-center font-semibold mr-5 text-[20px]">
             <hr className="mx-auto mt-[-20px] w-[1px] h-[150px] bg-white" />
             <div className="p-5">
-              <a href="#home" className="hover:text-mint">
+              <a href="#home" className="hover:text-yellow">
                 Home
               </a>
             </div>
             <div className="p-5">
-              <a href="#my-work" className="hover:text-mint">
+              <a href="#my-work" className="hover:text-yellow">
                 My Work
               </a>
             </div>
             <div className="p-5">
-              <a href="#contact" className="hover:text-mint">
+              <a href="#contact" className="hover:text-yellow">
                 Contact
               </a>
             </div>
