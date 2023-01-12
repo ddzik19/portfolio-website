@@ -6,6 +6,7 @@ import Intro from "./partials/intro";
 import LeftNav from "./partials/left-nav";
 import CompanyList from "./partials/company-list";
 import Projects from "./partials/projects";
+import ContactForm from "./partials/contact-form";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <About />
         {/* <CompanyList /> */}
         <Projects />
+        <ContactForm />
       </Layout>
       <LeftNav />
       <Footer />
