@@ -10,7 +10,7 @@ const NotableProjectTemplate = ({
   technology,
 }) => {
   return (
-    <div className="w-full">
+    <div className="w-full pb-10">
       <div className="bg-secondary rounded-xl p-4">
         <Subheading>{title}</Subheading>
         <p>{desc}</p>
