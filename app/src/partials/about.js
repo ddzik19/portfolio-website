@@ -1,11 +1,12 @@
 import Fade from "react-reveal/Fade";
-
+import { Header } from "../components/header";
 const About = () => {
   return (
     <Fade bottom distance="10%" duration={1500}>
       <div className="grid grid-cols-2 padding">
         <div>
-          <p className="text-yellow text-[30px] font-semibold">About Me</p>
+          <Header>About Me</Header>
+          <br />
           <p className="text-[16px]">
             Hi, my name is Damian Dzik and I enjoy creating/developing websites!
             <br />

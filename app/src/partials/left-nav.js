@@ -7,7 +7,7 @@ const LeftNav = () => {
   return (
     <>
       {width > 768 ? (
-        <Fade left duration={1500}>
+        <Fade left distance="500%" duration={1500}>
           <div className="fixed bottom-0 left-0 ml-20">
             <a href="https://www.linkedin.com/in/damian-dzik-35b8b41b9/">
               <BsLinkedin

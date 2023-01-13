@@ -7,6 +7,7 @@ import LeftNav from "./partials/left-nav";
 import CompanyList from "./partials/company-list";
 import Projects from "./partials/projects";
 import ContactForm from "./partials/contact-form";
+import OtherProjects from "./partials/other-projects";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <About />
         {/* <CompanyList /> */}
         <Projects />
+        <OtherProjects />
         <ContactForm />
       </Layout>
       <LeftNav />
