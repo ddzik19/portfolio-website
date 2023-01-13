@@ -18,7 +18,7 @@ const About = () => {
             <br />
             Today I am in my last semester of studying{" "}
             <span className="text-yellow text-[18px]">
-              Software Systems Development at{" "}
+              BCs Software Systems Development at{" "}
               <a
                 className="underline"
                 href="https://www.wit.ie/"
