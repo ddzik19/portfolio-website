@@ -7,22 +7,45 @@ const OtherProjects = () => {
   const { width, height } = useWindowDimensions();
   return (
     <>
-      <Header>Other Projects</Header>
-      <br />
-      <div className="grid grid-cols-2 gap-4 lg:gap-[100px]">
-        {List.projects.map((value, key) => {
-          return (
-            <NotableProjectTemplate
-              key={key}
-              title={value.title}
-              desc={value.desc}
-              githubHref={value.githubHref}
-              fileHref={value.fileHref}
-              technology={value.technology}
-            />
-          );
-        })}
-      </div>
+      {width > 500 ? (
+        <>
+          <Header>Other Projects</Header>
+          <br />
+          <div className="grid grid-cols-2 gap-4 lg:gap-[100px]">
+            {List.projects.map((value, key) => {
+              return (
+                <NotableProjectTemplate
+                  key={key}
+                  title={value.title}
+                  desc={value.desc}
+                  githubHref={value.githubHref}
+                  fileHref={value.fileHref}
+                  technology={value.technology}
+                />
+              );
+            })}
+          </div>
+        </>
+      ) : (
+        <>
+          <Header>Other Projects</Header>
+          <br />
+          <div className="grid grid-cols-1">
+            {List.projects.map((value, key) => {
+              return (
+                <NotableProjectTemplate
+                  key={key}
+                  title={value.title}
+                  desc={value.desc}
+                  githubHref={value.githubHref}
+                  fileHref={value.fileHref}
+                  technology={value.technology}
+                />
+              );
+            })}
+          </div>
+        </>
+      )}
     </>
   );
 };
