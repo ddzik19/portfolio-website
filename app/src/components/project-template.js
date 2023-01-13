@@ -1,7 +1,8 @@
 import { BsGithub } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
+import { Subheading } from "./subheading";
 
-const ProjectTempalteLeft = ({
+const ProjectTemplate = ({
   githubHref,
   fileHref,
   title,
@@ -18,7 +19,7 @@ const ProjectTempalteLeft = ({
       />
       <div className="mx-auto mt-[250px] w-[400px] h-fit z-10">
         <div className="p-4 rounded-lg bg-deep shadow-lg bg-secondary">
-          <p className="font-semibold text-yellow text-[20px]">{title}</p>
+          <Subheading>{title}</Subheading>
           <p className="text-[14px]">{desc}</p>
           <ul className="text-yellow pt-4 text-[14px]">
             {technology.map((value, key) => {
@@ -57,4 +58,4 @@ const ProjectTempalteLeft = ({
   );
 };
 
-export default ProjectTempalteLeft;
+export default ProjectTemplate;
