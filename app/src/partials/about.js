@@ -31,7 +31,7 @@ const About = () => {
                   <a
                     className="underline"
                     href="https://www.wit.ie/"
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                   >
                     SETU Waterford
                   </a>
@@ -75,7 +75,7 @@ const About = () => {
                 <a
                   className="underline"
                   href="https://www.wit.ie/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   SETU Waterford
                 </a>
@@ -116,7 +116,7 @@ const About = () => {
                 <a
                   className="underline"
                   href="https://www.wit.ie/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   SETU Waterford
                 </a>

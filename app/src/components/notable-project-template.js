@@ -11,7 +11,7 @@ const NotableProjectTemplate = ({
 }) => {
   return (
     <div className="w-full pb-10">
-      <div className="bg-secondary rounded-xl p-4">
+      <div className="bg-secondary rounded-xl p-4 2xl:p-10">
         <Subheading>{title}</Subheading>
         <p>{desc}</p>
         <ul className="text-yellow pt-4 text-[14px]">
@@ -29,7 +29,7 @@ const NotableProjectTemplate = ({
           <a
             href={githubHref}
             className="mr-4 hover:text-yellow hover:cursor-pointer"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <BsGithub size={25} className="inline" />
           </a>
@@ -40,7 +40,7 @@ const NotableProjectTemplate = ({
           <a
             href={fileHref}
             className="mr-4 hover:text-yellow hover:cursor-pointer"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <FiExternalLink size={25} className="inline" />
           </a>

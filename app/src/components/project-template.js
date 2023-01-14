@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import { BsGithub } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 import { Subheading } from "./subheading";
@@ -12,13 +13,15 @@ const ProjectTemplate = ({
 }) => {
   return (
     <div className="flex pb-[100px]">
-      <img
-        className="rounded-xl absolute w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
-        src={image}
-        alt="Picture of project"
-      />
+      <div className="2xl:mx-auto">
+        <img
+          className="rounded-xl absolute w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
+          src={image}
+          alt="Picture of project"
+        />
+      </div>
       <div className="mx-auto mt-[250px] w-[400px] h-fit z-10">
-        <div className="p-4 rounded-lg bg-deep shadow-lg bg-secondary">
+        <div className="p-4 rounded-lg shadow-lg bg-secondary">
           <Subheading>{title}</Subheading>
           <p className="text-[14px]">{desc}</p>
           <ul className="text-yellow pt-4 text-[14px]">

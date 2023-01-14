@@ -14,14 +14,17 @@ const OtherProjects = () => {
           <div className="grid grid-cols-2 gap-4 lg:gap-[100px]">
             {List.projects.map((value, key) => {
               return (
-                <NotableProjectTemplate
-                  key={key}
-                  title={value.title}
-                  desc={value.desc}
-                  githubHref={value.githubHref}
-                  fileHref={value.fileHref}
-                  technology={value.technology}
-                />
+                <Fade bottom distance="10%" duration={1500}>
+                  <NotableProjectTemplate
+                    key={key}
+                    title={value.title}
+                    desc={value.desc}
+                    githubHref={value.githubHref}
+                    fileHref={value.fileHref}
+                    technology={value.technology}
+                  />
+                </Fade>
+
               );
             })}
           </div>
@@ -33,14 +36,16 @@ const OtherProjects = () => {
           <div className="grid grid-cols-1">
             {List.projects.map((value, key) => {
               return (
-                <NotableProjectTemplate
-                  key={key}
-                  title={value.title}
-                  desc={value.desc}
-                  githubHref={value.githubHref}
-                  fileHref={value.fileHref}
-                  technology={value.technology}
-                />
+                <Fade bottom distance="10%" duration={1500}>
+                  <NotableProjectTemplate
+                    key={key}
+                    title={value.title}
+                    desc={value.desc}
+                    githubHref={value.githubHref}
+                    fileHref={value.fileHref}
+                    technology={value.technology}
+                  />
+                </Fade>
               );
             })}
           </div>
