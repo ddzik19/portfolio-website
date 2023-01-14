@@ -18,8 +18,9 @@ const Projects = () => {
                 key={key}
                 title={value.title}
                 desc={value.desc}
-                image={CandyChaser}
+                image={value.image}
                 technology={value.technology}
+                githubHref={value.githubHref}
                 fileHref={value.fileHref}
               />
             </Fade>

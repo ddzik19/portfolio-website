@@ -11,7 +11,7 @@ const ProjectTemplate = ({
   technology,
 }) => {
   return (
-    <div className="flex">
+    <div className="flex pb-[100px]">
       <img
         className="rounded-xl absolute w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
         src={image}
