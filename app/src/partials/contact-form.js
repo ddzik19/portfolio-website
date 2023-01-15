@@ -14,7 +14,7 @@ const ContactForm = () => {
           href="mailto:ddzik09@gmail.com"
           rel="noopener noreferrer"
           target="_blank"
-          className="rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-4"
+          className="rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-4 transition-all"
         >
           Send message
         </a>

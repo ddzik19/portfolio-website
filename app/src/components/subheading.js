@@ -1,3 +1,3 @@
-export const Subheading = ({ children }) => {
-  return <p className="font-semibold text-yellow text-[20px]">{children}</p>;
+export const Subheading = ({ children, className = "" }) => {
+  return <p className={`font-semibold text-yellow text-[20px] ${className}`}>{children}</p>;
 };

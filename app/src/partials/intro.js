@@ -15,7 +15,7 @@ const Intro = () => {
         </p>
         <a
           href="#contact-form"
-          className="text-[16px] p-3 font-semibold rounded-lg mt-7 border-2 border-yellow hover:bg-yellow hover:text-black"
+          className="text-[16px] p-3 font-semibold rounded-lg mt-7 border-2 border-yellow hover:bg-yellow hover:text-black transition-all"
         >
           Get In Touch
         </a>
