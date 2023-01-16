@@ -53,8 +53,8 @@ const About = () => {
           </div>
         </Fade>
       ) : width > 768 ? (
-        <Fade bottom distance="10%" duration={1500}>
-          <div>
+        <Fade bottom distance="10%" duration={1500} >
+          <div className="padding">
             <Header>About Me</Header>
             <br />
             <p className="text-[16px]">
@@ -95,7 +95,7 @@ const About = () => {
         </Fade>
       ) : (
         <Fade bottom distance="10%" duration={1500}>
-          <div>
+          <div className="padding">
             <Header>About Me</Header>
             <br />
             <p className="text-[16px]">

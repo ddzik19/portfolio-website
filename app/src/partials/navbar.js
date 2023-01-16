@@ -1,6 +1,9 @@
 import useWindowDimensions from "../hooks/use-window-dimensions";
 import Fade from "react-reveal/Fade";
 import CV from '../assets/Damian_Dzik_CV.pdf'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { RxCross1 } from 'react-icons/rx'
+
 const Navbar = () => {
   const { width, height } = useWindowDimensions();
   return (
@@ -24,7 +27,7 @@ const Navbar = () => {
             <a
               href={CV}
               target="_blank"
-              className="rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all"
+              className="rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all" rel="noreferrer"
             >
               CV
             </a>

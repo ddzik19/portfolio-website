@@ -13,10 +13,17 @@ export const MainProjects = [
   },
   {
     title: "Commander-B",
-    desc: "Commander-B is a Discord bot that I have developed for my friends Discord server. When a user enters one of the existing commands, they will get a reply from the bot with the requested information. The bot has multiple commands that can be viewed by entering the !cod.help command.",
+    desc: <p>
+      Commander-B is a Discord bot that I have developed for my friends Discord server.
+      When a user enters one of the existing commands, they will get a reply from the bot with the requested information.
+      The bot has multiple commands that can be viewed by entering the !cod.help command.
+      <br />
+      <br />
+      The Discord Bot was hosted on Heroku.com but since Heroku is no longer free, I had to stop hosting the Discord bot.
+    </p>,
     image: Codbot,
     technology: ["Node", "JavaScript", "Discord.js"],
-    githubHref: "https://github.com/ddzik19/cod-bot",
+    githubHref: "https://github.com/ddzik19/cod-bot-wz2",
     fileHref: "",
   },
 ];

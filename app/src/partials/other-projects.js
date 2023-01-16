@@ -2,17 +2,17 @@ import useWindowDimensions from "../hooks/use-window-dimensions";
 import Fade from "react-reveal/Fade";
 import NotableProjectTemplate from "../components/notable-project-template";
 import { Header } from "../components/header";
-import List from "../database/notable-projects.json";
+import { NotableProjects } from "../database/notable-projects";
 const OtherProjects = () => {
   const { width, height } = useWindowDimensions();
   return (
     <>
       {width > 500 ? (
-        <>
+        <div className="padding">
           <Header>Other Projects</Header>
           <br />
           <div className="grid grid-cols-2 gap-4 lg:gap-[100px]">
-            {List.projects.map((value, key) => {
+            {NotableProjects.map((value, key) => {
               return (
                 <Fade bottom distance="10%" duration={1500}>
                   <NotableProjectTemplate
@@ -28,13 +28,13 @@ const OtherProjects = () => {
               );
             })}
           </div>
-        </>
+        </div>
       ) : (
-        <>
+        <div className="padding">
           <Header>Other Projects</Header>
           <br />
           <div className="grid grid-cols-1">
-            {List.projects.map((value, key) => {
+            {NotableProjects.map((value, key) => {
               return (
                 <Fade bottom distance="10%" duration={1500}>
                   <NotableProjectTemplate
@@ -49,7 +49,7 @@ const OtherProjects = () => {
               );
             })}
           </div>
-        </>
+        </div>
       )}
     </>
   );
