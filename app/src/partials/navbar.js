@@ -3,9 +3,12 @@ import Fade from "react-reveal/Fade";
 import CV from '../assets/Damian_Dzik_CV.pdf'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RxCross1 } from 'react-icons/rx'
+import { useState } from "react";
 
 const Navbar = () => {
   const { width, height } = useWindowDimensions();
+  const { menuOpen, setIsMenuOpen } = useState(false);
+
   return (
     <>
       {width > 768 ? (
@@ -35,7 +38,23 @@ const Navbar = () => {
           </div>
         </Fade>
       ) : (
-        <></>
+        <Fade right duration={1500}>
+          <div className="w-full">
+            <button className="fixed right-0 p-3" onClick={!setIsMenuOpen}>
+              {!menuOpen ?
+                (
+                  <GiHamburgerMenu className="transition-all" size={40} />
+                )
+                :
+                (
+                  <RxCross1 className="transition-all" size={40} />
+                )}
+            </button>
+            <aside className="bg-white w-[300px] fixed right-0">
+              yaya
+            </aside>
+          </div>
+        </Fade>
       )}
     </>
   );
