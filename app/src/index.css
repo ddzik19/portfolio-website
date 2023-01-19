@@ -45,3 +45,10 @@ code {
 .mobile-margin {
   margin: 0 10%;
 }
+
+.burger-line {
+  width: 50px;
+  height: 3px;
+  border-radius: 80%;
+  background-color: white;
+}

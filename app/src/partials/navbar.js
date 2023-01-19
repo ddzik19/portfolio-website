@@ -45,40 +45,7 @@ const Navbar = () => {
           </div>
         </Fade>
       ) : (
-        <Fade right duration={1500}>
-          <div
-            className={`w-fit h-fit fixed overflow-hidden z-100 bg-deep right-0 mx-10`}
-          >
-            <button className="fixed mt-[-50px]" onClick={!setIsMenuOpen}>
-              {!menuOpen ? (
-                <GiHamburgerMenu className="transition-all" size={40} />
-              ) : (
-                <RxCross1 className="transition-all" size={40} />
-              )}
-            </button>
-            <aside
-              className={`text-center text-[20px] mt-[70px] w-full h-fit transition-all ${burgerClass}`}
-            >
-              <a href="#home" className="block hover:text-yellow my-8">
-                Home
-              </a>
-              <a href="#my-work" className="block hover:text-yellow my-8">
-                My Work
-              </a>
-              <a href="#contact-form" className="block hover:text-yellow my-8">
-                Contact Me
-              </a>
-              <a
-                href={CV}
-                target="_blank"
-                className="mx-auto block w-[150px] my-8 rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all"
-                rel="noreferrer"
-              >
-                CV
-              </a>
-            </aside>
-          </div>
-        </Fade>
+        <Fade right duration={1500}></Fade>
       )}
     </>
   );
