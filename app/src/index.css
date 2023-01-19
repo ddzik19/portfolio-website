@@ -29,6 +29,8 @@ html {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   color: white;
   background-color: #0f0916;
   margin: 0;

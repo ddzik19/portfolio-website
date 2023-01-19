@@ -1,18 +1,17 @@
 import useWindowDimensions from "../hooks/use-window-dimensions";
 import Fade from "react-reveal/Fade";
 import CV from "../assets/Damian_Dzik_CV.pdf";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross1 } from "react-icons/rx";
+import Hamburger from "hamburger-react";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const { width, height } = useWindowDimensions();
-  const { menuOpen, setIsMenuOpen } = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   let burgerClass = "";
 
   useEffect(() => {
-    if (menuOpen) {
+    if (isOpen) {
       burgerClass = "mr-[0px]";
     } else {
       burgerClass = "mr-[500px]";
@@ -45,7 +44,12 @@ const Navbar = () => {
           </div>
         </Fade>
       ) : (
-        <Fade right duration={1500}></Fade>
+        <Fade right duration={1500}>
+          <div className="fixed">
+            <Hamburger toggled={isOpen} toggle={setIsOpen} />
+            <div></div>
+          </div>
+        </Fade>
       )}
     </>
   );

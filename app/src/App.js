@@ -11,7 +11,7 @@ import OtherProjects from "./partials/other-projects";
 
 function App() {
   return (
-    <>
+    <div className="">
       <Navbar />
       <Layout>
         <Intro />
@@ -23,7 +23,7 @@ function App() {
       </Layout>
       <LeftNav />
       <Footer />
-    </>
+    </div>
   );
 }
 
