@@ -46,8 +46,8 @@ const Navbar = () => {
         </Fade>
       ) : (
         <Fade right duration={1500}>
-          {/* <div
-            className={`w-fit h-fit fixed overflow-hidden z-100 bg-deep right-0`}
+          <div
+            className={`w-fit h-fit fixed overflow-hidden z-100 bg-deep right-0 mx-10`}
           >
             <button className="fixed mt-[-50px]" onClick={!setIsMenuOpen}>
               {!menuOpen ? (
@@ -77,7 +77,7 @@ const Navbar = () => {
                 CV
               </a>
             </aside>
-          </div> */}
+          </div>
         </Fade>
       )}
     </>

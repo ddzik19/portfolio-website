@@ -24,13 +24,12 @@ const OtherProjects = () => {
                     technology={value.technology}
                   />
                 </Fade>
-
               );
             })}
           </div>
         </div>
       ) : (
-        <div className="padding">
+        <div className="padding mobile-margin">
           <Header>Other Projects</Header>
           <br />
           <div className="grid grid-cols-1">
