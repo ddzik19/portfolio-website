@@ -44,12 +44,32 @@ const Navbar = () => {
           </div>
         </Fade>
       ) : (
-        <Fade right duration={1500}>
-          <div className="fixed right-0">
-            <Hamburger toggled={isOpen} toggle={setIsOpen} />
-            <div></div>
-          </div>
-        </Fade>
+        <div className="fixed pb-5 bg-scondary">
+          <Fade right duration={1500}>
+            <div className="p-4 float-right">
+              <Hamburger toggled={isOpen} toggle={setIsOpen} />
+            </div>
+            <div className="grid grid-cols-1 gap-10 right-0 fixed py-5 text-center font-semibold mr-5 text-[20px]">
+              <a href="#home" className="hover:text-yellow">
+                Home
+              </a>
+              <a href="#my-work" className="hover:text-yellow">
+                My Work
+              </a>
+              <a href="#contact-form" className="hover:text-yellow">
+                Contact Me
+              </a>
+              <a
+                href={CV}
+                target="_blank"
+                className="rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all"
+                rel="noreferrer"
+              >
+                CV
+              </a>
+            </div>
+          </Fade>
+        </div>
       )}
     </>
   );
