@@ -45,7 +45,7 @@ const Navbar = () => {
         </Fade>
       ) : (
         <Fade right duration={1500}>
-          <div className="fixed">
+          <div className="fixed right-0">
             <Hamburger toggled={isOpen} toggle={setIsOpen} />
             <div></div>
           </div>

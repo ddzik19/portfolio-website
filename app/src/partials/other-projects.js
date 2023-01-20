@@ -7,7 +7,7 @@ const OtherProjects = () => {
   const { width, height } = useWindowDimensions();
   return (
     <>
-      {width > 500 ? (
+      {width > 1280 ? (
         <div className="padding">
           <Header>Other Projects</Header>
           <br />
