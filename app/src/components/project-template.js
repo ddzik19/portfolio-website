@@ -13,14 +13,14 @@ const ProjectTemplate = ({
 }) => {
   return (
     <div className="flex pb-[100px]">
-      <div className="xl:mx-auto">
+      <div className="">
         <img
           className="rounded-xl absolute w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
           src={image}
           alt="Picture of project"
         />
       </div>
-      <div className="mx-auto mt-[250px] w-[400px] h-fit z-10">
+      <div className="ml-[25%] mt-[250px] w-[400px] h-fit z-10">
         <div className="p-4 rounded-lg shadow-lg bg-secondary">
           <Subheading>{title}</Subheading>
           <p className="text-[14px]">{desc}</p>
