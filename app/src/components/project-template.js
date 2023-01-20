@@ -20,7 +20,7 @@ const ProjectTemplate = ({
           alt="Picture of project"
         />
       </div>
-      <div className="ml-[25%] mt-[250px] w-[400px] h-fit z-10">
+      <div className="mx-auto lg:ml-[25%] mt-[250px] w-[400px] h-fit z-10">
         <div className="p-4 rounded-lg shadow-lg bg-secondary">
           <Subheading>{title}</Subheading>
           <p className="text-[14px]">{desc}</p>
