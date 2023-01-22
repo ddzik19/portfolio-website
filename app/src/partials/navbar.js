@@ -11,9 +11,9 @@ const Navbar = () => {
   let burgerClass = "";
 
   if (isOpen) {
-    burgerClass = "mr-[0px]";
+    burgerClass = "block";
   } else {
-    burgerClass = "mr-[500px]";
+    burgerClass = "hidden";
   }
 
   return (
@@ -43,7 +43,9 @@ const Navbar = () => {
         </Fade>
       ) : (
         <Fade right duration={1500}>
-          <div className="block pt-[45%] right-0 w-fit h-full bg-[#191022] z-10 px-10 fixed text-center text-[25px] font-semibold">
+          <div
+            className={`${burgerClass} pt-[45%] right-0 w-fit h-full bg-[#191022] z-10 px-10 fixed text-center text-[25px] font-semibold`}
+          >
             <a href="#home" className="hover:text-yellow block my-5">
               Home
             </a>
