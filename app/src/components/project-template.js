@@ -16,7 +16,7 @@ const ProjectTemplate = ({
   const { width, height } = useWindowDimensions();
   return (
     <>
-      {width > 1080 ? (
+      {width > 1920 ? (
         <Fade bottom distance="10%" duration={1500}>
           <div className="flex pb-[500px]">
             <img
@@ -71,7 +71,7 @@ const ProjectTemplate = ({
               src={image}
               alt="Picture of project"
             />
-            <div className="mx-auto lg:ml-[25%] mt-[250px] w-[400px] h-fit z-10">
+            <div className="mx-auto lg:ml-[20%] mt-[250px] w-[400px] h-fit z-10">
               <div className="p-4 rounded-lg shadow-lg bg-secondary">
                 <Subheading>{title}</Subheading>
                 <p className="text-[14px]">{desc}</p>

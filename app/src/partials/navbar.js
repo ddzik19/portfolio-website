@@ -10,13 +10,12 @@ const Navbar = () => {
 
   let burgerClass = "";
 
-  useEffect(() => {
-    if (isOpen) {
-      burgerClass = "mr-[0px]";
-    } else {
-      burgerClass = "mr-[500px]";
-    }
-  });
+  if (isOpen) {
+    burgerClass = "mr-[0px]";
+  } else {
+    burgerClass = "mr-[500px]";
+  }
+
 
   return (
     <>
@@ -44,32 +43,32 @@ const Navbar = () => {
           </div>
         </Fade>
       ) : (
-        <div className="fixed pb-5 bg-scondary">
+        <>
+          <div className="m-5 fixed z-100">
+            <Hamburger toggled={isOpen} toggle={setIsOpen} />
+          </div>
           <Fade right duration={1500}>
-            <div className="p-4 float-right">
-              <Hamburger toggled={isOpen} toggle={setIsOpen} />
-            </div>
-            <div className="grid grid-cols-1 gap-10 right-0 fixed py-5 text-center font-semibold mr-5 text-[20px]">
-              <a href="#home" className="hover:text-yellow">
+            <div className="bg-[#191022] w-full h-full z-10 fixed text-center pt-[300px] text-[25px] font-semibold">
+              <a href="#home" className="hover:text-yellow block my-5">
                 Home
               </a>
-              <a href="#my-work" className="hover:text-yellow">
+              <a href="#my-work" className="hover:text-yellow block my-5">
                 My Work
               </a>
-              <a href="#contact-form" className="hover:text-yellow">
+              <a href="#contact-form" className="hover:text-yellow block my-5">
                 Contact Me
               </a>
               <a
                 href={CV}
                 target="_blank"
-                className="rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all"
+                className="block w-[100px] mx-auto rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all"
                 rel="noreferrer"
               >
                 CV
               </a>
             </div>
           </Fade>
-        </div>
+        </>
       )}
     </>
   );
