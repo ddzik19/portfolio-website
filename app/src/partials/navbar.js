@@ -1,13 +1,20 @@
 import useWindowDimensions from "../hooks/use-window-dimensions";
 import Fade from "react-reveal/Fade";
-import CV from '../assets/Damian_Dzik_CV.pdf'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { RxCross1 } from 'react-icons/rx'
-import { useState } from "react";
+import CV from "../assets/Damian_Dzik_CV.pdf";
+import Hamburger from "hamburger-react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const { width, height } = useWindowDimensions();
-  const { menuOpen, setIsMenuOpen } = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  let burgerClass = "";
+
+  if (isOpen) {
+    burgerClass = "block";
+  } else {
+    burgerClass = "hidden";
+  }
 
   return (
     <>
@@ -21,38 +28,44 @@ const Navbar = () => {
             <a href="#my-work" className="hover:text-yellow">
               My Work
             </a>
-            <a
-              href="#contact-form"
-              className="hover:text-yellow"
-            >
+            <a href="#contact-form" className="hover:text-yellow">
               Contact Me
             </a>
             <a
               href={CV}
               target="_blank"
-              className="rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all" rel="noreferrer"
+              className="rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all"
+              rel="noreferrer"
             >
               CV
             </a>
-
           </div>
         </Fade>
       ) : (
         <Fade right duration={1500}>
-          <div className="w-full">
-            <button className="fixed right-0 p-3" onClick={!setIsMenuOpen}>
-              {!menuOpen ?
-                (
-                  <GiHamburgerMenu className="transition-all" size={40} />
-                )
-                :
-                (
-                  <RxCross1 className="transition-all" size={40} />
-                )}
-            </button>
-            <aside className="bg-white w-[300px] fixed right-0">
-              yaya
-            </aside>
+          <div
+            className={`${burgerClass} pt-[45%] right-0 w-fit h-full bg-[#191022] z-10 px-10 fixed text-center text-[25px] font-semibold`}
+          >
+            <a href="#home" className="hover:text-yellow block my-5">
+              Home
+            </a>
+            <a href="#my-work" className="hover:text-yellow block my-5">
+              My Work
+            </a>
+            <a href="#contact-form" className="hover:text-yellow block my-5">
+              Contact Me
+            </a>
+            <a
+              href={CV}
+              target="_blank"
+              className="block w-[100px] mx-auto rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all"
+              rel="noreferrer"
+            >
+              CV
+            </a>
+          </div>
+          <div className="fixed p-5 fixed right-0 z-10">
+            <Hamburger toggled={isOpen} toggle={setIsOpen} />
           </div>
         </Fade>
       )}

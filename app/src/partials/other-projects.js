@@ -3,12 +3,13 @@ import Fade from "react-reveal/Fade";
 import NotableProjectTemplate from "../components/notable-project-template";
 import { Header } from "../components/header";
 import { NotableProjects } from "../database/notable-projects";
+
 const OtherProjects = () => {
   const { width, height } = useWindowDimensions();
   return (
     <>
-      {width > 500 ? (
-        <div className="padding">
+      {width > 1280 ? (
+        <div className="pb-[300px]">
           <Header>Other Projects</Header>
           <br />
           <div className="grid grid-cols-2 gap-4 lg:gap-[100px]">
@@ -24,13 +25,12 @@ const OtherProjects = () => {
                     technology={value.technology}
                   />
                 </Fade>
-
               );
             })}
           </div>
         </div>
       ) : (
-        <div className="padding">
+        <div className="padding mobile-margin">
           <Header>Other Projects</Header>
           <br />
           <div className="grid grid-cols-1">
