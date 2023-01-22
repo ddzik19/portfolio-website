@@ -16,7 +16,6 @@ const Navbar = () => {
     burgerClass = "mr-[500px]";
   }
 
-
   return (
     <>
       {width > 768 ? (
@@ -43,32 +42,30 @@ const Navbar = () => {
           </div>
         </Fade>
       ) : (
-        <>
-          <div className="m-5 fixed z-100">
+        <Fade right duration={1500}>
+          <div className="block pt-[45%] right-0 w-fit h-full bg-[#191022] z-10 px-10 fixed text-center text-[25px] font-semibold">
+            <a href="#home" className="hover:text-yellow block my-5">
+              Home
+            </a>
+            <a href="#my-work" className="hover:text-yellow block my-5">
+              My Work
+            </a>
+            <a href="#contact-form" className="hover:text-yellow block my-5">
+              Contact Me
+            </a>
+            <a
+              href={CV}
+              target="_blank"
+              className="block w-[100px] mx-auto rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all"
+              rel="noreferrer"
+            >
+              CV
+            </a>
+          </div>
+          <div className="fixed p-5 fixed right-0 z-10">
             <Hamburger toggled={isOpen} toggle={setIsOpen} />
           </div>
-          <Fade right duration={1500}>
-            <div className="bg-[#191022] w-full h-full z-10 fixed text-center pt-[300px] text-[25px] font-semibold">
-              <a href="#home" className="hover:text-yellow block my-5">
-                Home
-              </a>
-              <a href="#my-work" className="hover:text-yellow block my-5">
-                My Work
-              </a>
-              <a href="#contact-form" className="hover:text-yellow block my-5">
-                Contact Me
-              </a>
-              <a
-                href={CV}
-                target="_blank"
-                className="block w-[100px] mx-auto rounded-lg font-semibold border-[2px] border-yellow hover:bg-yellow hover:text-black p-2 transition-all"
-                rel="noreferrer"
-              >
-                CV
-              </a>
-            </div>
-          </Fade>
-        </>
+        </Fade>
       )}
     </>
   );
