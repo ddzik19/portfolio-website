@@ -8,10 +8,12 @@ const About = () => {
   return (
     <>
       {width > 1280 ? (
-        <Fade bottom distance="10%" duration={1500}>
-          <div className="grid grid-cols-2 padding">
-            <div>
+        <div className="grid grid-cols-2 padding">
+          <div>
+            <Fade bottom distance="10%" duration={1500}>
               <Header>About Me</Header>
+            </Fade>
+            <Fade bottom distance="10%" duration={1500}>
               <p className="text-[16px]">
                 Hi, my name is Damian Dzik and I enjoy creating/developing
                 websites!
@@ -42,20 +44,26 @@ const About = () => {
                 <br />I am currently on the hunt for a Frontend job after
                 graduating college this May of 2023.
               </p>
-            </div>
-            <div>
+            </Fade>
+          </div>
+          <div>
+            <Fade bottom distance="10%" duration={1500}>
               <img
                 className="w-[300px] h-[300px] bg-yellow my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
                 src={ProfilePic}
                 alt="Picture of me"
               />
-            </div>
+            </Fade>
           </div>
-        </Fade>
+        </div>
+
       ) : width > 768 ? (
-        <Fade bottom distance="10%" duration={1500}>
-          <div className="padding">
+
+        <div className="padding">
+          <Fade bottom distance="10%" duration={1500}>
             <Header>About Me</Header>
+          </Fade>
+          <Fade bottom distance="10%" duration={1500}>
             <p className="text-[16px]">
               Hi, my name is Damian Dzik and I enjoy creating/developing
               websites!
@@ -86,17 +94,22 @@ const About = () => {
               <br />I am currently on the hunt for a Frontend job after
               graduating college this May of 2023.
             </p>
+          </Fade>
+          <Fade bottom distance="10%" duration={1500}>
             <img
               className="w-[300px] h-[300px] bg-yellow my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
               src={ProfilePic}
               alt="Picture of me"
             />
-          </div>
-        </Fade>
+          </Fade>
+        </div>
       ) : (
-        <Fade bottom distance="10%" duration={1500}>
-          <div className="padding">
+
+        <div className="padding">
+          <Fade bottom distance="10%" duration={1500}>
             <Header>About Me</Header>
+          </Fade>
+          <Fade bottom distance="10%" duration={1500}>
             <p className="text-[16px]">
               Hi, my name is Damian Dzik and I enjoy creating/developing
               websites!
@@ -127,14 +140,17 @@ const About = () => {
               <br />I am currently on the hunt for a Frontend job after
               graduating college this May of 2023.
             </p>
+          </Fade>
+          <Fade bottom distance="10%" duration={1500}>
             <img
               className="w-[300px] bg-yellow my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
               src={ProfilePic}
               alt="Picture of me"
             />
-          </div>
-        </Fade>
-      )}
+          </Fade>
+        </div>
+      )
+      }
     </>
   );
 };
