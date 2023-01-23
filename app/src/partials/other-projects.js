@@ -11,8 +11,7 @@ const OtherProjects = () => {
       {width > 1280 ? (
         <div className="pb-[300px]">
           <Header>Other Projects</Header>
-          <br />
-          <div className="grid grid-cols-2 gap-4 lg:gap-[100px]">
+          <div className="grid grid-cols-2 gap-4 gap-[100px]">
             {NotableProjects.map((value, key) => {
               return (
                 <Fade bottom distance="10%" duration={1500}>
@@ -30,9 +29,8 @@ const OtherProjects = () => {
           </div>
         </div>
       ) : (
-        <div className="padding mobile-margin">
+        <div className="padding">
           <Header>Other Projects</Header>
-          <br />
           <div className="grid grid-cols-1">
             {NotableProjects.map((value, key) => {
               return (

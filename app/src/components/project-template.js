@@ -20,18 +20,18 @@ const ProjectTemplate = ({
         <Fade bottom distance="10%" duration={1500}>
           <div className="flex pb-[500px] mx-auto">
             <img
-              className="inline rounded-xl w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
+              className="absolute rounded-xl w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
               src={image}
               alt="Picture of project"
             />
-            <div className="inline w-[500px] z-10">
+            <div className="ml-[50%] mt-[250px] w-[400px] z-10">
               <div className="p-4 rounded-lg shadow-lg bg-secondary h-fit ">
                 <Subheading>{title}</Subheading>
                 <p className="text-[14px]">{desc}</p>
                 <ul className="text-yellow pt-4 text-[14px]">
                   {technology.map((value, key) => {
                     return (
-                      <li key={key} className="inline px-4">
+                      <li key={key} className="inline-block py-2 px-4">
                         {value}
                       </li>
                     );
@@ -44,7 +44,7 @@ const ProjectTemplate = ({
                     href={githubHref}
                     className="mr-4 hover:text-yellow hover:cursor-pointer"
                   >
-                    <BsGithub size={25} className="inline" />
+                    <BsGithub size={25} className="inline-block" />
                   </a>
                 ) : (
                   <></>
@@ -54,7 +54,7 @@ const ProjectTemplate = ({
                     href={fileHref}
                     className="mr-4 hover:text-yellow hover:cursor-pointer"
                   >
-                    <FiExternalLink size={25} className="inline" />
+                    <FiExternalLink size={25} className="inline-block" />
                   </a>
                 ) : (
                   <></>
@@ -67,18 +67,18 @@ const ProjectTemplate = ({
         <Fade bottom distance="10%" duration={1500}>
           <div className="flex pb-[100px]">
             <img
-              className="rounded-xl absolute w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
+              className="rounded-xl 2xl:ml-[5%] absolute w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
               src={image}
               alt="Picture of project"
             />
-            <div className="mx-auto mr-1 mt-[250px] w-[400px] h-fit z-10">
+            <div className="mx-auto mt-[250px] w-[400px] h-fit z-10">
               <div className="p-4 rounded-lg shadow-lg bg-secondary">
                 <Subheading>{title}</Subheading>
                 <p className="text-[14px]">{desc}</p>
                 <ul className="text-yellow pt-4 text-[14px]">
                   {technology.map((value, key) => {
                     return (
-                      <li key={key} className="inline px-4">
+                      <li key={key} className="inline-block py-2 px-4">
                         {value}
                       </li>
                     );
@@ -91,7 +91,7 @@ const ProjectTemplate = ({
                     href={githubHref}
                     className="mr-4 hover:text-yellow hover:cursor-pointer"
                   >
-                    <BsGithub size={25} className="inline" />
+                    <BsGithub size={25} className="inline-block" />
                   </a>
                 ) : (
                   <></>
@@ -101,7 +101,7 @@ const ProjectTemplate = ({
                     href={fileHref}
                     className="mr-4 hover:text-yellow hover:cursor-pointer"
                   >
-                    <FiExternalLink size={25} className="inline" />
+                    <FiExternalLink size={25} className="inline-block" />
                   </a>
                 ) : (
                   <></>
@@ -112,14 +112,14 @@ const ProjectTemplate = ({
         </Fade>
       ) : (
         <Fade bottom distance="10%" duration={1500}>
-          <div className="mx-auto w-[400px] h-fit z-10">
+          <div className="w-fit h-fit z-10 pb-[100px]">
             <div className="p-4 rounded-lg shadow-lg bg-secondary">
               <Subheading>{title}</Subheading>
               <p className="text-[14px]">{desc}</p>
               <ul className="text-yellow pt-4 text-[14px]">
                 {technology.map((value, key) => {
                   return (
-                    <li key={key} className="inline px-4">
+                    <li key={key} className="inline-block py-2 px-4">
                       {value}
                     </li>
                   );
@@ -132,7 +132,7 @@ const ProjectTemplate = ({
                   href={githubHref}
                   className="mr-4 hover:text-yellow hover:cursor-pointer"
                 >
-                  <BsGithub size={25} className="inline" />
+                  <BsGithub size={25} className="inline-block" />
                 </a>
               ) : (
                 <></>
@@ -142,7 +142,7 @@ const ProjectTemplate = ({
                   href={fileHref}
                   className="mr-4 hover:text-yellow hover:cursor-pointer"
                 >
-                  <FiExternalLink size={25} className="inline" />
+                  <FiExternalLink size={25} className="inline-block" />
                 </a>
               ) : (
                 <></>

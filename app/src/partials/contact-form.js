@@ -11,7 +11,7 @@ const ContactForm = () => {
         <div id="contact-form" className="px-4 mx-auto max-w-[700px] padding">
           <Header>Contact Me</Header>
           <p className="mb-8 lg:mb-16 text-[18px] font-light text-left ">
-            If you'd like to get in touch with me then feel free to send me an
+            If you'd like to get in touch with me, feel free to send me an
             email and I will get back to you in no time!
           </p>
           <a
@@ -24,13 +24,10 @@ const ContactForm = () => {
           </a>
         </div>
       ) : (
-        <div
-          id="contact-form"
-          className="px-4 mx-auto max-w-[700px] padding mobile-margin"
-        >
+        <div id="contact-form" className="px-4 mx-auto max-w-[700px] padding ">
           <Header>Contact Me</Header>
           <p className="mb-8 lg:mb-16 text-[18px] font-light text-left ">
-            If you'd like to get in touch with me then feel free to send me an
+            If you'd like to get in touch with me, feel free to send me an
             email and I will get back to you in no time!
           </p>
           <a
