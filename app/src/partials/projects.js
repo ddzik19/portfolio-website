@@ -31,7 +31,7 @@ const Projects = () => {
           })}
         </div>
       ) : (
-        <div className="padding mobile-margin" id="my-work">
+        <div className="padding" id="my-work">
           <Fade bottom distance="10%" duration={1500}>
             <Header>Things I've Created</Header>
           </Fade>

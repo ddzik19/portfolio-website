@@ -2,7 +2,7 @@ import { Subheading } from "./subheading";
 import { BsGithub } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 import useWindowDimensions from "../hooks/use-window-dimensions";
-import Fade from 'react-reveal';
+import Fade from "react-reveal";
 
 const NotableProjectTemplate = ({
   title,
@@ -11,7 +11,7 @@ const NotableProjectTemplate = ({
   githubHref,
   technology,
 }) => {
-  const { width, height } = useWindowDimensions()
+  const { width, height } = useWindowDimensions();
   return (
     <>
       {width > 1080 ? (
@@ -23,7 +23,7 @@ const NotableProjectTemplate = ({
               <ul className="text-yellow pt-4 text-[14px]">
                 {technology.map((value, key) => {
                   return (
-                    <li key={key} className="inline px-4">
+                    <li key={key} className="inline-block py-2 px-4">
                       {value}
                     </li>
                   );
@@ -35,9 +35,10 @@ const NotableProjectTemplate = ({
                 <a
                   href={githubHref}
                   className="mr-4 hover:text-yellow hover:cursor-pointer"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <BsGithub size={25} className="inline" />
+                  <BsGithub size={25} className="inline-block" />
                 </a>
               ) : (
                 <></>
@@ -46,9 +47,10 @@ const NotableProjectTemplate = ({
                 <a
                   href={fileHref}
                   className="mr-4 hover:text-yellow hover:cursor-pointer"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <FiExternalLink size={25} className="inline" />
+                  <FiExternalLink size={25} className="inline-block" />
                 </a>
               ) : (
                 <></>
@@ -57,7 +59,7 @@ const NotableProjectTemplate = ({
           </div>
         </Fade>
       ) : (
-        <Fade distance="10%" duration={1500} >
+        <Fade distance="10%" duration={1500}>
           <div className="w-full pb-10">
             <div className="bg-secondary rounded-xl p-4 2xl:p-10">
               <Subheading>{title}</Subheading>
@@ -65,7 +67,7 @@ const NotableProjectTemplate = ({
               <ul className="text-yellow pt-4 text-[14px]">
                 {technology.map((value, key) => {
                   return (
-                    <li key={key} className="inline px-4">
+                    <li key={key} className="inline-block py-2 px-4">
                       {value}
                     </li>
                   );
@@ -77,9 +79,10 @@ const NotableProjectTemplate = ({
                 <a
                   href={githubHref}
                   className="mr-4 hover:text-yellow hover:cursor-pointer"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <BsGithub size={25} className="inline" />
+                  <BsGithub size={25} className="inline-block" />
                 </a>
               ) : (
                 <></>
@@ -88,9 +91,10 @@ const NotableProjectTemplate = ({
                 <a
                   href={fileHref}
                   className="mr-4 hover:text-yellow hover:cursor-pointer"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <FiExternalLink size={25} className="inline" />
+                  <FiExternalLink size={25} className="inline-block" />
                 </a>
               ) : (
                 <></>
@@ -98,9 +102,7 @@ const NotableProjectTemplate = ({
             </div>
           </div>
         </Fade>
-      )
-
-      }
+      )}
     </>
   );
 };

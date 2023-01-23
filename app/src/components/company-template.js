@@ -19,7 +19,7 @@ const CompanyTemplate = ({ companyName, website, date, desc }) => {
         </div>
       ) : (
         <div>
-          <div className=" w-[300px] border-b-[2px] border-yellow">
+          <div className="w-fit border-b-[2px] border-yellow">
             <a
               href={website}
               className="underline font-semibold text-white text-[20px] hover:text-yellow float-top"

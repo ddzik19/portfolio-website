@@ -31,7 +31,7 @@ const CompanyList = () => {
           </div>
         </div>
       ) : (
-        <div className="padding mobile-margin">
+        <div className="padding">
           <Fade bottom distance="10%" duration={1500}>
             <Header>Places I've Worked</Header>
           </Fade>

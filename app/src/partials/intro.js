@@ -30,7 +30,7 @@ const Intro = () => {
         </Fade>
       ) : (
         <Fade bottom distance="10%" duration={1500}>
-          <div className="padding relative mobile-margin" id="home">
+          <div className="padding relative" id="home">
             <p className="text-[18px] text-yellow">Hi, my name is</p>
             <p className="text-[60px] font-bold">Damian Dzik.</p>
             <p className="text-[18px] text-gray-400 text-left pb-10">

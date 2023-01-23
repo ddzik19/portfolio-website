@@ -31,7 +31,7 @@ const ProjectTemplate = ({
                 <ul className="text-yellow pt-4 text-[14px]">
                   {technology.map((value, key) => {
                     return (
-                      <li key={key} className="inline px-4">
+                      <li key={key} className="inline-block py-2 px-4">
                         {value}
                       </li>
                     );
@@ -44,7 +44,7 @@ const ProjectTemplate = ({
                     href={githubHref}
                     className="mr-4 hover:text-yellow hover:cursor-pointer"
                   >
-                    <BsGithub size={25} className="inline" />
+                    <BsGithub size={25} className="inline-block" />
                   </a>
                 ) : (
                   <></>
@@ -54,7 +54,7 @@ const ProjectTemplate = ({
                     href={fileHref}
                     className="mr-4 hover:text-yellow hover:cursor-pointer"
                   >
-                    <FiExternalLink size={25} className="inline" />
+                    <FiExternalLink size={25} className="inline-block" />
                   </a>
                 ) : (
                   <></>
@@ -71,14 +71,14 @@ const ProjectTemplate = ({
               src={image}
               alt="Picture of project"
             />
-            <div className="mx-auto mr-1 mt-[250px] w-[400px] h-fit z-10">
+            <div className="mx-auto mt-[250px] w-[400px] h-fit z-10">
               <div className="p-4 rounded-lg shadow-lg bg-secondary">
                 <Subheading>{title}</Subheading>
                 <p className="text-[14px]">{desc}</p>
                 <ul className="text-yellow pt-4 text-[14px]">
                   {technology.map((value, key) => {
                     return (
-                      <li key={key} className="inline px-4">
+                      <li key={key} className="inline-block py-2 px-4">
                         {value}
                       </li>
                     );
@@ -91,7 +91,7 @@ const ProjectTemplate = ({
                     href={githubHref}
                     className="mr-4 hover:text-yellow hover:cursor-pointer"
                   >
-                    <BsGithub size={25} className="inline" />
+                    <BsGithub size={25} className="inline-block" />
                   </a>
                 ) : (
                   <></>
@@ -101,7 +101,7 @@ const ProjectTemplate = ({
                     href={fileHref}
                     className="mr-4 hover:text-yellow hover:cursor-pointer"
                   >
-                    <FiExternalLink size={25} className="inline" />
+                    <FiExternalLink size={25} className="inline-block" />
                   </a>
                 ) : (
                   <></>
@@ -112,14 +112,14 @@ const ProjectTemplate = ({
         </Fade>
       ) : (
         <Fade bottom distance="10%" duration={1500}>
-          <div className="mx-auto w-[400px] h-fit z-10">
+          <div className="w-fit h-fit z-10 pb-[100px]">
             <div className="p-4 rounded-lg shadow-lg bg-secondary">
               <Subheading>{title}</Subheading>
               <p className="text-[14px]">{desc}</p>
               <ul className="text-yellow pt-4 text-[14px]">
                 {technology.map((value, key) => {
                   return (
-                    <li key={key} className="inline px-4">
+                    <li key={key} className="inline-block py-2 px-4">
                       {value}
                     </li>
                   );
@@ -132,7 +132,7 @@ const ProjectTemplate = ({
                   href={githubHref}
                   className="mr-4 hover:text-yellow hover:cursor-pointer"
                 >
-                  <BsGithub size={25} className="inline" />
+                  <BsGithub size={25} className="inline-block" />
                 </a>
               ) : (
                 <></>
@@ -142,7 +142,7 @@ const ProjectTemplate = ({
                   href={fileHref}
                   className="mr-4 hover:text-yellow hover:cursor-pointer"
                 >
-                  <FiExternalLink size={25} className="inline" />
+                  <FiExternalLink size={25} className="inline-block" />
                 </a>
               ) : (
                 <></>
