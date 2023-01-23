@@ -14,7 +14,7 @@ const CompanyList = () => {
           <Fade bottom distance="10%" duration={1500}>
             <Header>Places I've Worked</Header>
           </Fade>
-          <div className="pt-10">
+          <div>
             {Companies.map((value, index) => {
               return (
                 <Fade bottom distance="10%" duration={1500}>
@@ -35,7 +35,7 @@ const CompanyList = () => {
           <Fade bottom distance="10%" duration={1500}>
             <Header>Places I've Worked</Header>
           </Fade>
-          <div className="pt-10">
+          <div>
             {Companies.map((value, index) => {
               return (
                 <Fade bottom distance="10%" duration={1500}>

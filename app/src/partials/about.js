@@ -1,7 +1,7 @@
 import Fade from "react-reveal/Fade";
 import { Header } from "../components/header";
 import useWindowDimensions from "../hooks/use-window-dimensions";
-
+import ProfilePic from "../assets/profile-pic.png";
 const About = () => {
   const { width, height } = useWindowDimensions();
 
@@ -47,8 +47,8 @@ const About = () => {
             <div>
               <img
                 className="w-[300px] h-[300px] bg-white my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
-                src=""
-                alt=""
+                src={ProfilePic}
+                alt="Picture of me"
               />
             </div>
           </div>
@@ -90,8 +90,8 @@ const About = () => {
             </p>
             <img
               className="w-[300px] h-[300px] bg-white my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
-              src=""
-              alt=""
+              src={ProfilePic}
+              alt="Picture of me"
             />
           </div>
         </Fade>
@@ -132,8 +132,8 @@ const About = () => {
             </p>
             <img
               className="w-[300px] h-[300px] bg-white my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
-              src=""
-              alt=""
+              src={ProfilePic}
+              alt="Picture of me"
             />
           </div>
         </Fade>

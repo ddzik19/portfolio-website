@@ -14,8 +14,6 @@ const Projects = () => {
           <Fade bottom distance="10%" duration={1500}>
             <Header>Things I've Created</Header>
           </Fade>
-          <br />
-          <br />
           {MainProjects.map((value, key) => {
             return (
               <Fade bottom distance="10%" duration={1500}>
@@ -37,8 +35,6 @@ const Projects = () => {
           <Fade bottom distance="10%" duration={1500}>
             <Header>Things I've Created</Header>
           </Fade>
-          <br />
-          <br />
           {MainProjects.map((value, key) => {
             return (
               <Fade bottom distance="10%" duration={1500}>

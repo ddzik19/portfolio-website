@@ -1,5 +1,6 @@
 import Fade from "react-reveal/Fade";
 import useWindowDimensions from "../hooks/use-window-dimensions";
+import { Header } from "../components/header";
 
 const ContactForm = () => {
   const { width, height } = useWindowDimensions();
@@ -8,9 +9,7 @@ const ContactForm = () => {
     <Fade bottom distance="10%" duration={1500}>
       {width > 768 ? (
         <div id="contact-form" className="px-4 mx-auto max-w-[700px] padding">
-          <h2 className="mb-4 text-4xl tracking-tight font-semibold text-left text-yellow">
-            Contact Me
-          </h2>
+          <Header>Contact Me</Header>
           <p className="mb-8 lg:mb-16 text-[18px] font-light text-left ">
             If you'd like to get in touch with me then feel free to send me an
             email and I will get back to you in no time!
@@ -29,9 +28,7 @@ const ContactForm = () => {
           id="contact-form"
           className="px-4 mx-auto max-w-[700px] padding mobile-margin"
         >
-          <h2 className="mb-4 text-4xl tracking-tight font-semibold text-left text-yellow">
-            Contact Me
-          </h2>
+          <Header>Contact Me</Header>
           <p className="mb-8 lg:mb-16 text-[18px] font-light text-left ">
             If you'd like to get in touch with me then feel free to send me an
             email and I will get back to you in no time!

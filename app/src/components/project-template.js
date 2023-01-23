@@ -18,13 +18,13 @@ const ProjectTemplate = ({
     <>
       {width > 1920 ? (
         <Fade bottom distance="10%" duration={1500}>
-          <div className="flex pb-[500px]">
+          <div className="flex pb-[500px] mx-auto">
             <img
               className="inline rounded-xl w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
               src={image}
               alt="Picture of project"
             />
-            <div className="inline ml-10 w-[500px] z-10">
+            <div className="inline w-[500px] z-10">
               <div className="p-4 rounded-lg shadow-lg bg-secondary h-fit ">
                 <Subheading>{title}</Subheading>
                 <p className="text-[14px]">{desc}</p>
@@ -71,7 +71,7 @@ const ProjectTemplate = ({
               src={image}
               alt="Picture of project"
             />
-            <div className="mx-auto lg:ml-[20%] mt-[250px] w-[400px] h-fit z-10">
+            <div className="mx-auto mr-1 mt-[250px] w-[400px] h-fit z-10">
               <div className="p-4 rounded-lg shadow-lg bg-secondary">
                 <Subheading>{title}</Subheading>
                 <p className="text-[14px]">{desc}</p>
@@ -112,7 +112,7 @@ const ProjectTemplate = ({
         </Fade>
       ) : (
         <Fade bottom distance="10%" duration={1500}>
-          <div className="mx-auto lg:ml-[25%] mt-[100px] w-[400px] h-fit z-10">
+          <div className="mx-auto w-[400px] h-fit z-10">
             <div className="p-4 rounded-lg shadow-lg bg-secondary">
               <Subheading>{title}</Subheading>
               <p className="text-[14px]">{desc}</p>
