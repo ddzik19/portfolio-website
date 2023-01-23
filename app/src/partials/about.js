@@ -46,7 +46,7 @@ const About = () => {
             </div>
             <div>
               <img
-                className="w-[300px] h-[300px] bg-white my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
+                className="w-[300px] h-[300px] bg-yellow my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
                 src={ProfilePic}
                 alt="Picture of me"
               />
@@ -89,7 +89,7 @@ const About = () => {
               graduating college this May of 2023.
             </p>
             <img
-              className="w-[300px] h-[300px] bg-white my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
+              className="w-[300px] h-[300px] bg-yellow my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
               src={ProfilePic}
               alt="Picture of me"
             />
@@ -131,7 +131,7 @@ const About = () => {
               graduating college this May of 2023.
             </p>
             <img
-              className="w-[300px] h-[300px] bg-white my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
+              className="w-[300px] h-[300px] bg-yellow my-[100px] mx-auto rounded-full shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
               src={ProfilePic}
               alt="Picture of me"
             />
