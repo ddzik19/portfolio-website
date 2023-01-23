@@ -1,6 +1,7 @@
 # Damian Dzik Portfolio website
 
-This is my portfolio website where i showcase my work and development skills. This is my first React.js website. I saw many frontend developers having their own portfolio website so I decided I should have one too.
+Second iteration of my portfolio website. @ https://damiandzik97.000webhostapp.com/
+- [v1](https://github.com/ddzik19/portfolio-website-v1)
 
 # 🗞 Information displayed:
 
