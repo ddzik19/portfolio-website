@@ -1,31 +1,58 @@
-import OmniproLogo from "../assets/Omnipro_Logo.jpg";
-import { useEffect, useState } from "react";
+import { Header } from "../components/header";
+import Fade from "react-reveal/Fade";
+import CompanyTemplate from "../components/company-template";
+import { Companies } from "../database/companies";
+import useWindowDimensions from "../hooks/use-window-dimensions";
 
 const CompanyList = () => {
-  const { companyName, setCompanyName } = useState();
-
-  useEffect(() => {
-    displayInfo();
-  });
-
-  const displayInfo = ({ name }) => {
-    if (name === "Omnipro") {
-      return <p>Omnipro</p>;
-    }
-  };
+  const { width, height } = useWindowDimensions();
 
   return (
-    <div className="padding grid grid-cols-[150px_200px]">
-      <div className="">
-        <button
-          className="block border-l-2 border-mint px-5 py-2"
-          onClick={setCompanyName("Omnipro")}
-        >
-          Omnipro
-        </button>
-      </div>
-      <div className="py-2"></div>
-    </div>
+    <>
+      {width > 768 ? (
+        <div className="padding">
+          <Fade bottom distance="10%" duration={1500}>
+            <Header>Places I've Worked</Header>
+          </Fade>
+          <div>
+            {Companies.map((value, index) => {
+              return (
+                <Fade bottom distance="10%" duration={1500}>
+                  <CompanyTemplate
+                    key={index}
+                    companyName={value.companyName}
+                    website={value.website}
+                    date={value.date}
+                    desc={value.desc}
+                  />
+                </Fade>
+              );
+            })}
+          </div>
+        </div>
+      ) : (
+        <div className="padding mobile-margin">
+          <Fade bottom distance="10%" duration={1500}>
+            <Header>Places I've Worked</Header>
+          </Fade>
+          <div>
+            {Companies.map((value, index) => {
+              return (
+                <Fade bottom distance="10%" duration={1500}>
+                  <CompanyTemplate
+                    key={index}
+                    companyName={value.companyName}
+                    website={value.website}
+                    date={value.date}
+                    desc={value.desc}
+                  />
+                </Fade>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
