@@ -17,7 +17,7 @@ const NotableProjectTemplate = ({
       {width > 1080 ? (
         <Fade bottom distance="10%" duration={1500}>
           <div className="w-full pb-10">
-            <div className="bg-secondary rounded-xl p-4 2xl:p-10">
+            <div className="bg-secondary rounded-xl p-4">
               <Subheading>{title}</Subheading>
               <p>{desc}</p>
               <ul className="text-yellow pt-4 text-[14px]">
@@ -61,7 +61,7 @@ const NotableProjectTemplate = ({
       ) : (
         <Fade distance="10%" duration={1500}>
           <div className="w-full pb-10">
-            <div className="bg-secondary rounded-xl p-4 2xl:p-10">
+            <div className="bg-secondary rounded-xl p-4">
               <Subheading>{title}</Subheading>
               <p>{desc}</p>
               <ul className="text-yellow pt-4 text-[14px]">
