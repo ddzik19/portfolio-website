@@ -20,11 +20,11 @@ const ProjectTemplate = ({
         <Fade bottom distance="10%" duration={1500}>
           <div className="flex pb-[500px] mx-auto">
             <img
-              className="inline rounded-xl w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
+              className="absolute rounded-xl w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
               src={image}
               alt="Picture of project"
             />
-            <div className="inline w-[500px] z-10">
+            <div className="ml-[50%] mt-[250px] w-[400px] z-10">
               <div className="p-4 rounded-lg shadow-lg bg-secondary h-fit ">
                 <Subheading>{title}</Subheading>
                 <p className="text-[14px]">{desc}</p>
@@ -67,7 +67,7 @@ const ProjectTemplate = ({
         <Fade bottom distance="10%" duration={1500}>
           <div className="flex pb-[100px]">
             <img
-              className="rounded-xl absolute w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
+              className="rounded-xl 2xl:ml-[5%] absolute w-[800px] h-fit filter grayscale hover:filter-none transition-all hover:shadow-[0_0px_80px_-15px_rgb(255,251,0)]"
               src={image}
               alt="Picture of project"
             />

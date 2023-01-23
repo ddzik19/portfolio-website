@@ -64,7 +64,7 @@ const Navbar = () => {
               CV
             </a>
           </div>
-          <div className="fixed p-5 fixed right-0 z-10">
+          <div className="p-5 fixed right-0 z-10">
             <Hamburger toggled={isOpen} toggle={setIsOpen} />
           </div>
         </Fade>
