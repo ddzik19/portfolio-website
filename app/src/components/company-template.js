@@ -5,7 +5,7 @@ const CompanyTemplate = ({ companyName, website, date, desc }) => {
   return (
     <>
       {width > 1280 ? (
-        <div className="flex bg-secondary rounded-xl p-6">
+        <div className="flex bg-secondary rounded-xl mb-10">
           <div className="inline w-[300px] pr-1 border-r-[2px] border-yellow">
             <a
               href={website}
@@ -18,7 +18,7 @@ const CompanyTemplate = ({ companyName, website, date, desc }) => {
           <div className="inline px-10 py-1 w-full">{desc}</div>
         </div>
       ) : (
-        <div className="bg-secondary p-10 rounded-xl">
+        <div className="bg-secondary p-10 rounded-xl mb-10">
           <div className="w-fit pb-1 border-b-[2px] border-yellow">
             <a
               href={website}

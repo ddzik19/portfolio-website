@@ -26,23 +26,19 @@ const About = () => {
                 development.
                 <br />
                 <br />
-                Today I am in my last semester of studying{" "}
+                Today I have the honor to work as a {" "}
                 <span className="text-yellow text-[18px]">
-                  BCs Software Systems Development at{" "}
+                  Frontend Developer{" "}
+                  <span className="text-white">for{" "}</span>
                   <a
                     className="underline"
-                    href="https://www.wit.ie/"
+                    href="https://2cubed.ie/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    SETU Waterford
+                    2Cubed
                   </a>
-                </span>{" "}
-                with the hope of becoming a Frontend Software Engineer after my
-                graduation.
-                <br />
-                <br />I am currently on the hunt for a Frontend job after
-                graduating college this May of 2023.
+                </span>
               </p>
             </Fade>
           </div>
@@ -122,23 +118,19 @@ const About = () => {
               development.
               <br />
               <br />
-              Today I am in my last semester of studying{" "}
+              Today I have the honor to work as a {" "}
               <span className="text-yellow text-[18px]">
-                BCs Software Systems Development at{" "}
+                Frontend Developer{" "}
+                <span className="text-white">for{" "}</span>
                 <a
                   className="underline"
-                  href="https://www.wit.ie/"
+                  href="https://2cubed.ie/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  SETU Waterford
+                  2Cubed
                 </a>
-              </span>{" "}
-              with the hope of becoming a Frontend Software Engineer after my
-              graduation.
-              <br />
-              <br />I am currently on the hunt for a Frontend job after
-              graduating college this May of 2023.
+              </span>
             </p>
           </Fade>
           <Fade bottom distance="10%" duration={1500}>
