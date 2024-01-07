@@ -1,6 +1,6 @@
 # Damian Dzik Portfolio website
 
-Second iteration of my portfolio website. @ https://damiandzik97.000webhostapp.com/
+Second iteration of my portfolio website.
 - [v1](https://github.com/ddzik19/portfolio-website-v1)
 
 # 🗞 Information displayed:
